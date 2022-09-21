@@ -9,6 +9,8 @@ const NewPlace= () => {
             type="text" 
             label="Tiltle" 
             element="input"
+            validators={[]}
+            errorText="Please enter a valid title"
             />
         </form>
     )
