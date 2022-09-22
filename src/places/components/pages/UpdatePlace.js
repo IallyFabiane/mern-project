@@ -1,4 +1,5 @@
 import React from "react";
+import './PlaceForm.css';
 import { useParams } from 'react-router-dom';
 import Input from "../../../shared/components/FormElements/Input";
 import Button from "../../../shared/components/FormElements/Button";
@@ -47,8 +48,8 @@ function UpdatePlace() {
     }
 
     return (
-        <form>
-            <Input id='title' element='input' type='text' label='title' validators={[VALIDATOR_REQUIRE()]} errorText='Please enter a valid title' onInput={() => {}} value={identifiedPlace.title} valid={true} />
+        <form className="place-form">
+            <Input id='title' element='input' type='text' label='Title' validators={[VALIDATOR_REQUIRE()]} errorText='Please enter a valid title' onInput={() => {}} value={identifiedPlace.title} valid={true} />
             <Input id='description' element='textarea'  label='Description' validators={[VALIDATOR_MINLENGTH(5)]} errorText='Please enter a valid description' onInput={() => {}} value={identifiedPlace.description} valid={true} />
             <Button type='submit' disabled={true}>UPDATE PLACE</Button>
         </form>
