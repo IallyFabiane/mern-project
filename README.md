@@ -1,4 +1,4 @@
-<h1>Full Stack Project with MongoDB, Node.js, Express and React (MERN)</h1>
+<h1>MERN Project Frontend</h1>
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Js" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
